@@ -1,0 +1,286 @@
+/* CSS */
+body {
+  background: white;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  background-color: #ffffff; /* Fondo blanco */
+  max-width: 100%; /* Diseño responsive */
+  margin-right: 0; /* Elimina el margen derecho */
+  width: 100%;
+}
+h2 {
+  font-size: 45px;
+}
+header {
+  background: linear-gradient(
+    135deg,
+    #333,
+    #333 20%,
+    #2a363b 20%,
+    #2a363b 40%,
+    #607c8e 40%,
+    #607c8e 60%,
+    #ffffff 60%,
+    #99b8c3 80%,
+    #b0c0cb 80%,
+    #ffffff 100%
+  );
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: #ffffff; /* Texto blanco */
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.header-social a {
+  color: #2a363b 80%; /* Azul para los íconos de redes sociales */
+  display: inline-block;
+  float: right;
+  margin-left: 0px;
+  margin-right: 30px;
+}
+
+nav a {
+  color: #ffffff; /* Texto negro */
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #837da1; /* Fondo blanco al pasar el mouse */
+  color: #ffffff; /* Color de texto gris al pasar el mouse */
+}
+
+#quien-soy {
+  display: flex;
+  justify-content: space-between; /* Añade espacio entre las columnas */
+  align-items: center; /* Centra verticalmente */
+}
+
+.quiensoyTitle {
+  font-size: 50px;
+  color: #000000;
+}
+
+.quiensoy {
+  font-size: 30px;
+  color: #000000;
+}
+.quien-soy-column {
+  flex: 1; /* Distribuye el espacio de manera equitativa entre las columnas */
+  padding: 10px;
+  box-sizing: border-box; /* Incluye el padding en el ancho */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.quien-soy-imagen img {
+  max-width: 80%; /* Asegura que la imagen se ajuste al contenedor */
+  border-radius: 10px;
+  margin-top: 100px;
+  max-height: 80%;
+}
+
+.quien-soy-texto {
+  font-size: 16px;
+  color: #333; /* Ajusta el color del texto según tus preferencias */
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+#tecnologias{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background:linear-gradient(
+    135deg,  #607c8e 40%,
+    #607c8e 60%,
+    #ffffff 60%,
+    #99b8c3 80%,
+    #b0c0cb 80%,
+    #ffffff 100%);
+}
+.tecnologias-carrusel {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #ffffff 60%,
+  #99b8c3 80%,
+  #b0c0cb 80%,
+  #ffffff 100%;
+}
+
+.tecnologias-item {
+  width: 25%;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.tecnologias-item img {
+  width: 100%;
+}
+
+.tecnologias-item h3 {
+  text-align: center;
+  color: #007bff; /* Azul */
+}
+
+.proyectos{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.proyectos-galeria {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.proyecto {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.proyecto img {
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+
+/* Modifica la posición del footer */
+footer {
+  position: static; /* Cambia 'absolute' a 'fixed' para que el footer siempre esté en la parte inferior de la ventana del navegador */
+  bottom: 0;
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin-top: 150px;
+}
+
+.columnas {
+  display: flex;
+  flex: 1;
+}
+
+.columna-izquierda {
+  width: 50%;
+}
+
+.columna-derecha {
+  width: 50%;
+}
+
+input,
+textarea {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 200px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 40%;
+  background: greenyellow;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: greenyellow;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  border-color: greenyellow;
+  color: #fff;
+  border: none;
+  background: greenyellow;
+  border-radius: 15px;
+}
+
+.tecnologias-item:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.tecnologias-item:hover img {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+p {
+  font-size: 20px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.proyectosWeb{
+  margin-bottom: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background:linear-gradient(
+    135deg,  #607c8e 40%,
+    #607c8e 60%,
+    #ffffff 60%,
+    #99b8c3 80%,
+    #b0c0cb 80%,
+    #ffffff 100%);
+}
+.proyectos-galeria {
+  display: flex;
+}
+
+.proyecto {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.proyecto:hover {
+  background-color: #f0f0f0;
+}
+
+.proyecto h4{
+  font-size: 20px;
+}
+.proyecto p {
+  font-size: 16px;
+  display: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.proyecto.active h4,
+.proyecto.active p {
+  display: block;
+}
