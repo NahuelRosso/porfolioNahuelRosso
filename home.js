@@ -1,25 +1,38 @@
 
   
 const btn = document.getElementById('button');
+const form = document.getElementById('form');
+const messageContainer = document.getElementById('message-container');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
 
-   btn.value = 'Sending...';
+  btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_83l7m5g';
+  const serviceID = 'default_service';
+  const templateID = 'template_83l7m5g';
 
-   emailjs.sendForm(serviceID, templateID, this)
+  emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      btn.value = 'Enviado';
+      form.reset(); // Resetea el formulario
+      showMessage('Email enviado correctamente', 'success');
+    })
+    .catch(err => {
+      btn.value = 'Enviar';
+      showMessage('Hubo un error al enviar el email', 'error');
     });
 });
+
+function showMessage(message, type) {
+  messageContainer.style.display = 'block';
+  messageContainer.textContent = message;
+  messageContainer.className = type;
+  setTimeout(() => {
+    messageContainer.style.display = 'none';
+  }, 5000); // Oculta el mensaje después de 5 segundos
+}
+
 
 
 const proyectos = document.querySelectorAll('.proyecto');

@@ -16,7 +16,7 @@
     <nav class="navbar">
       <a href="#quien-soy">Quién soy</a>
       <a href="#tecnologias">Tecnologías</a>
-      <a href="#proyectos">Proyectos</a>
+      <a href="#proyect">Proyectos</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
@@ -124,7 +124,7 @@
       </div>
       
     </section>
-    <section class="proyectos">
+    <section id="proyect"class="proyectos">
     <h2>Proyectos WordPress</h2>
     <div class="proyectos-galeria">
       <div class="proyecto">
@@ -161,8 +161,8 @@
 <section class="proyectosWeb">
   <h2>Proyectos Desarrollo Web</h2>
   <div class="proyectos-galeria">
-      <div class="proyecto" onclick="toggleDetails(this)">
-          <img src="image/drugstore.png" alt="Proyecto 1">
+      <div class="proyecto" onclick="toggleDetails(this)" >
+          <img src="image/drugstore.png" alt="Proyecto 1" >
           <h4>Durgstore</h4>
           <p>Proyecto realizado con Angular y Python. Se trata de un sistema de facturación y control de stock para una mueblería</p>
       </div>
@@ -192,6 +192,7 @@
           </p>
         </div>
         <div class="columna-derecha">
+          <div id="message-container" style="display: none;"></div>
           <h2 class="habilidadesTitle">Contacto</h2>
           <form id="form">
             <div class="field">
@@ -206,7 +207,7 @@
               <label for="message">Mensaje</label>
               <textarea name="message" id="message" required></textarea>
             </div>
-            <input type="submit" id="button" value="Send Email">
+            <input type="submit" id="button" value="Enviar">
           </form>
           
           <script type="text/javascript"
