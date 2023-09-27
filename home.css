@@ -306,3 +306,15 @@ a {
   background-color: #f44336; /* Color rojo para error */
   color: white;
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out; /* Agrega una transición de desplazamiento */
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Escala ligeramente el botón al pasar el mouse sobre él */
+}
